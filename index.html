@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Перемещение картинок</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: black;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        color: white;
+    }
+    .image-container {
+        width: 20%;
+        position: relative;
+    }
+    .image-container img {
+        max-width: 100%;
+        transition: all 0.5s ease;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .image-container:hover img {
+        left: calc(100% - 100px);
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="image-container">
+        <h1>Dag 1</h1>
+        <img src="img_hG7tOwP337.webp" alt="Картинка 1">
+        <p>Spille dataspill.</p>
+    </div>
+    <div class="image-container">
+        <h1>Dag 2</h1>
+        <img src="img_6f8zIW2y7F.webp" alt="Картинка 2">
+        <p>Spise easter bread.</p>
+    </div>
+    <div class="image-container">
+        <h1>Dag 3</h1>
+        <img src="img_kK8H6kK8F6.webp" alt="Картинка 3">
+        <p>Gå på tur.</p>
+    </div>
+    <div class="image-container">
+        <h1>Dag 4</h1>
+        <img src="img_646J1iQ2Ur.webp" alt="Картинка 4">
+        <p>Søve</p>
+    </div>
+    <div class="image-container">
+        <h1>Dag 5</h1>
+        <img src="img_IyB9eaXVi5.webp" alt="Картинка 5">
+        <p>Spise gode kjøtt.</p>
+    </div>
+</div>
+
+</body>
+</html>
